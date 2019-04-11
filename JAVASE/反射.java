@@ -1,4 +1,4 @@
-1、反射的定义
+﻿1、反射的定义
 
 能够分析类能力的程序称为反射。反射机制的功能极其强大。
 *反射机制的作用:
@@ -76,6 +76,8 @@ public static void prinMethods(Class a){
 		System.out.println(")");
 	}
 }
+
+
 
 3、
 

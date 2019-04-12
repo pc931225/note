@@ -79,6 +79,32 @@ public static void prinMethods(Class a){
 
 
 
-3、
+3、Constructor
+Integer a=127;
+Class class1=  a.getClass();
+Constructor[] constructors=class1.getConstructors();
+Constructor constructor=constructors[0];
+constructor.getDeclaringClass();//返回表示该类或接口的类对象，该类或接口声明由该对象表示的可执行文件
+constructor.getExceptionTypes();//返回一个类对象数组,该数组表示由该对象表示的底层可执行程序声明要抛出的异常类型
+constructor.getGenericExceptionTypes();//返回一个类型对象数组，该数组表示此可执行对象声明要抛出的异常
+constructorc.getModifiers();//返回构造器的修饰符的整型表示，可用Modifier.toString()方法解析
+
+4、Modifier
+Modifier.toString(int mod);  //解析字符串
+
+static boolean	isAbstract(int mod)
+static boolean	isFinal(int mod)
+static boolean	isInterface(int mod)
+static boolean	isNative(int mod)
+static boolean	isPrivate(int mod)
+static boolean	isProtected(int mod)
+static boolean	isPublic(int mod)
+static boolean	isStatic(int mod)
+static boolean	isStrict(int mod)
+static boolean	isSynchronized(int mod)
+static boolean	isTransient(int mod)
+static boolean	isVolatile(int mod)
+
+以上方法可检测方法名中对应的修饰符在Modifiers值中的位。
 
 

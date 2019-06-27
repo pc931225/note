@@ -1,0 +1,43 @@
+1、安装node(没有自行安装)  https://nodejs.org/zh-cn/
+2、安装cordova和ionic
+npm install -g cordova  ionic
+//检查iconic和cordova是否安装完成
+ionic -version 
+cordova -v
+3、创建项目
+// cd 到要创建项目的目录，输入以下内容创建ionic项目
+// ionic3Demo 是项目名，tabs是模板（默认是tabs，其他还有blank的单页等）
+ionic start ionic3Demo tabs
+4、安装依赖
+// 会生成一个 node_modules 文件夹，并在里面安装 package.json 上写下的文件
+cd ionic3Demo/
+npm install
+5、在浏览器运行测试项目
+ionic serve
+http://localhost:8100 //浏览器运行项目
+http://localhost:8100/ionic-lab //适配手机系统对比区别  可以快速学习各种部件及语法
+
+如果需要在手机运行，则执行以下命令
+
+// 添加iOS项目
+
+$ ionic platform add ios
+
+// 把src里的内容同步到ios项目中(src后面会讲到)
+ionic cordova build ios
+
+ionic cordova emulate ios
+
+
+
+//安卓的话同理，把ios替换为android即可
+
+ionic cordova  platform add android
+ionic cordova build android
+
+ionic cordova run android//真机运行app
+ionic cordova emulate android //模拟器运行app
+
+src 就是以后开发写代码主要的地方。每次写完要同步到手机项目中，需要使用
+ionic cordova build ios
+ionic cordova build android

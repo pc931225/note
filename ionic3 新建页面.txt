@@ -1,0 +1,18 @@
+//新建页面Setting
+ionic g page Setting
+
+执行完成后会在pages下新生成Setting文件夹,包含如下文件
+setting.module.ts
+setting.html
+setting.scss
+setting.ts
+//打开src/app/app.module.ts   
+//页面顶部写好导入
+import { SettingPage } from '../pages/setting/setting';
+//import  {自定义页面变量名} from '../pages/页面所在模块名/页面名(不带后缀)';
+//在declarations和entryComponents中加入SettingPage
+//打开 src/pages/tabs/tabs.ts
+//页面顶部写好导入
+import { SettingPage } from '../setting/setting';
+
+

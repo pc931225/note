@@ -1,0 +1,8 @@
+cd cordova/pack/xxpj
+cordova run
+cordova build android --release
+cordova plugin add
+cordova plugin remove 
+cordova-hcp build
+
+adb logcat | grep chromium >d:\log.log

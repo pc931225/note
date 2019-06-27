@@ -1,0 +1,4 @@
+git init  #在工作目录中初始化新仓库
+git clone git://github.com/schacon/grit.git 克隆仓库
+git clone git://github.com/schacon/grit.git mygrit 克隆仓库自定义新建项目目录名称mygrit
+git status 
